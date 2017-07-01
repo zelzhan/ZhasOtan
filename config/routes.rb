@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-
+  get 'home/about_us'
+  get 'home/contact'
+  get 'home/subscription'
 
 
 

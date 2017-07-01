@@ -1,5 +1,5 @@
 ActiveAdmin.register Post do
-  permit_params :name, :description, :published_at, :image
+  permit_params :name, :description, :short_desc, :published_at, :image
 
 scope :all
 # See permitted parameters documentation:
@@ -8,6 +8,7 @@ scope :all
     inputs "Details" do
       input :name
       input :description
+      input :short_desc
       f.file_field :image
     end
     actions
@@ -16,6 +17,7 @@ scope :all
   index do
     selectable_column
     id_column
+    column :short_desc
     column :name
     column :description
     column :image_file_size
@@ -23,7 +25,8 @@ scope :all
     column :updated_at
     actions
   end
-
+  
+  filter :short_desc
   filter :name
   filter :description
   filter :image_file_size

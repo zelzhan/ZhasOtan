@@ -1,5 +1,5 @@
 ActiveAdmin.register Project do
-  permit_params :name, :description, :published_at, :image
+  permit_params :name, :description, :short_desc, :published_at, :image
 
 scope :all
 # See permitted parameters documentation:
@@ -8,6 +8,7 @@ scope :all
     inputs "Details" do
       input :name
       input :description
+      input :short_desc
       f.file_field :image
     end
     actions
@@ -21,9 +22,11 @@ scope :all
     column :image_file_size
     column :created_at
     column :updated_at
+    column :short_desc
     actions
   end
 
+  filter :short_desc
   filter :name
   filter :description
   filter :image_file_size
