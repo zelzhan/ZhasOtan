@@ -1,5 +1,5 @@
 class GalleriesController < ApplicationController
   def index
-    @images = Image.all
+    @galleries = Gallery.all
   end
 end

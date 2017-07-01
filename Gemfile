@@ -8,8 +8,11 @@ end
 
 
 
+gem 'autoprefixer-rails'
 gem 'devise'
-gem 'bootstrap'
+gem 'devise-bootstrap-views'
+gem 'bootstrap-sass'
+# Bundle edge Rails inste
 gem 'activeadmin'
 gem "paperclip", "~> 5.0.0"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
