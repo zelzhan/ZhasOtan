@@ -7,3 +7,223 @@
  *= require_tree .
  *= require_self
  */
+
+ body{
+  font-family: 'Ubuntu', sans-serif;
+}
+.navbar-header a{
+  font-size: 24px;
+  color:#fff !important;
+}
+.nav li a{
+  color:#fff !important;
+}
+.menu{
+  float:right;
+}
+.navbar{
+  margin: 0;
+  position: fixed;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background:transparent;
+  border: 0;
+}
+.videopart{
+  position: relative;
+  width: 100%;
+  top:0;
+}
+video{
+  width: 100%;
+}
+.videopart h1{
+  position: absolute;
+  top:30%;
+  font-size: 72px;
+  z-index: 1;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-weight: 1000px;
+}
+.main{
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  top:0;
+  max-height: 740px;
+}
+.start{
+  padding: 20px 0;
+  width: 30%;
+  position: absolute;
+  z-index: 1;
+  font-size: 36px;
+  background:transparent;
+  border: 2px solid #B6304F;
+  top:540px;
+  left: 35%;
+}
+.start:active{
+  background: #B6304F;
+}
+.start:hover{
+  background: #B6304F;
+}
+.black{
+  background-color: black;
+  width: 100%;
+  height: 640px;
+}
+.news{
+  background: #B6304F;
+  position: relative;
+  top:0;
+  margin: 0;
+  padding: 0;
+}
+.title h1{
+  color:#fff;
+  text-align: center;
+}
+.title hr{
+  width: 10%;
+  position: absolute;
+  top:20px;
+}
+.title>.first-line{
+  left: 30%;
+}
+.title>.second-line{
+  left: 60%;
+}
+.block_news{
+  position: relative;
+  width: 25%;
+  height: 250px;
+  background: black;
+  margin: 3%;
+  display: inline-block;
+  padding: 0;
+}
+.block_news img{
+  width: 100%;
+  height: 170px;
+  margin: auto;
+}
+.block_news p{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.later_news{
+  position: relative;
+  margin-top:22px;
+  display: inline-block;
+  width: 100%;
+  height: 550px;
+  background: black;
+}
+.l_news{
+  position: relative;
+  height: 100px;
+  width:100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+.l_news p{
+
+}
+.projects{
+  background: #fff;
+  position: relative;
+  top:0;
+  margin: 0;
+  padding: 0;
+}
+.projects h1{
+  color:#2FC6FF !important;
+}
+.projects hr{
+  top:20px;
+  border-color:#2FC6FF;
+}
+.project{
+  position: relative;
+  display: inline-block;
+  width: 15%;
+  top:50px;
+  margin: 2%;
+  height: 200px;
+  background:transparent;
+}
+.project img{
+  border: 2px solid #2FC6FF;
+}
+.projects .grow{
+  position: relative;
+  margin-top:300px;
+  font-size: 72px;
+  text-align: center;
+}
+.move{
+
+}
+.project_detail{
+  top:300px;
+  width: 80%;
+  left: 10%;
+  height: 200px;
+  border: 2px solid #2FC6FF;
+  padding: 15px;
+  display: none;
+  position: absolute;
+}
+.project_detail p{
+  font-size: 18px;
+  color:#2FC6FF;
+}
+.static{
+  position: relative;
+  width: 90%;
+  top:0;
+  height: 200px;
+  padding: 20px;
+  margin:10%;
+}
+.static>h1{
+  top:0;
+  font-size: 54px;
+  text-align: center;
+}
+.static h3{
+  text-align: center;
+}
+.first:hover ~ .fir{
+  display: block !important;
+}
+.second:hover ~ .sec{
+  display: block !important;
+}
+.third:hover ~ .the{
+  display: block !important;
+}
+.four:hover ~ .fou{
+  display: block !important;
+}
+.five:hover ~ .fiv{
+  display: block !important;
+}
+.fot{
+  position: relative;
+  height: 100px;
+  width: 100%;
+  background-color: #2FC6FF;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 0;
+  padding: 10px;
+  z-index: 1;
+}

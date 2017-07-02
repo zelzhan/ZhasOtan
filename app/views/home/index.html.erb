@@ -1,0 +1,151 @@
+<div class="videopart">
+  <h1>Lorem ipsum dolor sit amet,<br>
+    consectetur adipisicing elit.</h1>
+  <button type="button" class="btn btn-primary start" name="button">Начать</button>
+  <section class="section-video main">
+      <%= video_tag "video.mp4", controls: false, autoplay: true, muted:
+                true, loop: true, class: "primary-video", type:
+                "video/mp4", media: "(min-width: 640 px)" %>
+  </section>
+</div>
+<div class="news">
+  <div class="container">
+    <div class="rows">
+      <div class="col-md-12 title">
+        <hr class="first-line">
+        <h1>Новости</h1>
+        <hr class="second-line">
+      </div>
+      <div class="col-md-9">
+        <% @posts.each do |post|%>
+        <div class="block_news">
+          <%= image_tag post.image, class: "img-responsive"  %>
+          <p><%= post.name %></p>
+          <p><%= post.short_desc %></p>
+          <p><%= post.created_at %></p>
+        </div>
+        <% end %>
+      </div>
+      <div class="col-md-3">
+        <div class="later_news">
+          <div class="l_news">
+            <p>title</p><br>
+            <p>date</p>
+          </div>
+          <div class="l_news">
+            <p>title</p><br>
+            <p>date</p>
+          </div>
+          <div class="l_news">
+            <p>title</p><br>
+            <p>date</p>
+          </div>
+          <div class="l_news">
+            <p>title</p><br>
+            <p>date</p>
+          </div>
+          <div class="l_news">
+            <p>title</p><br>
+            <p>date</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="projects">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 title">
+        <hr class="first-line">
+        <h1>Проекты</h1>
+        <hr class="second-line">
+      </div>
+      <div class="col-md-12">
+        <div class="project first">
+          <img src="img/project1.jpg" class="img-responsive img-circle" alt="">
+          <%= image_tag "project1.jpg", class: "img-responsive img-circle"%>
+        </div>
+        <div class="project second">
+          <img src="img/project2.jpg" class="img-responsive img-circle" alt="">
+            <%= image_tag "project2.jpg", class: "img-responsive img-circle"%>
+        </div>
+        <div class="project third">
+          <img src="img/project3.jpg" class="img-responsive img-circle" alt="">
+            <%= image_tag "project3.jpg", class: "img-responsive img-circle"%>
+        </div>
+        <div class="project four">
+          <img src="img/project4.jpg" class="img-responsive img-circle" alt="">
+            <%= image_tag "project4.jpg", class: "img-responsive img-circle"%>
+        </div>
+        <div class="project five">
+          <img src="img/project5.jpg" class="img-responsive img-circle" alt="">
+            <%= image_tag "project5.jpg", class: "img-responsive img-circle"%>
+        </div>
+
+        <div class="project_detail fir">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="project_detail sec">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="project_detail the">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="project_detail fou">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="project_detail fiv">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <div class="move">
+        <div class="col-md-12">
+          <h1 class="grow">Мы растем каждый год</h1>
+          <div class="col-md-3">
+            <div class="static">
+              <h1>4</h1>
+              <h3>года</h3>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="static">
+              <h1>5600</h1>
+              <h3>заявок</h3>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="static">
+              <h1>2000</h1>
+              <h3>стажер</h3>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="static">
+              <h1>200</h1>
+              <h3>трудоустройтво</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="navbar navbar-fixed-bottom fot">
+  <h1>&copy Rabbits 2017</h1>
+</div>
+<!-- Page Content -->
+
+<!-- /.container -->
+
+<!-- jQuery Version 1.11.1 -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
