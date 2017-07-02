@@ -22,32 +22,18 @@
           <%= image_tag post.image, class: "img-responsive"  %>
           <p><%= post.name %></p>
           <p><%= post.short_desc %></p>
-          <p><%= post.created_at %></p>
+          <p><%= post.created_at.strftime("%m/%d/%Y") %></p>
         </div>
         <% end %>
       </div>
       <div class="col-md-3">
         <div class="later_news">
+          <% @posts.each do |post|%>
           <div class="l_news">
-            <p>title</p><br>
-            <p>date</p>
+            <p><%= post.name %></p><br>
+            <p><%= post.created_at.strftime("%m/%d/%Y") %></p>
           </div>
-          <div class="l_news">
-            <p>title</p><br>
-            <p>date</p>
-          </div>
-          <div class="l_news">
-            <p>title</p><br>
-            <p>date</p>
-          </div>
-          <div class="l_news">
-            <p>title</p><br>
-            <p>date</p>
-          </div>
-          <div class="l_news">
-            <p>title</p><br>
-            <p>date</p>
-          </div>
+          <% end %>
         </div>
 
       </div>
